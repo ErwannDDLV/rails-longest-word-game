@@ -1,0 +1,12 @@
+<h2>Score</h2>
+<p>the grid was : <%= @grid %></p>
+
+<h3> Now your result </h3>
+
+<p>Time Taken to answer: "<%= @result[:time] %>" seconds</p>
+<p>Translation: "<%= @result[:translation] %>"</p>
+<p>Your score: "<%= @result[:score]%>"</p>
+
+<h2>Message: <%= @result[:message]%></h2>
+
+<h4><%= link_to 'Play Again', root_path %></h4>

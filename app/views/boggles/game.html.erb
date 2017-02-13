@@ -1,0 +1,16 @@
+<h2>Boggles game</h2>
+
+<h3> Welcome to the longest word-game !</h3>
+<p>Here is your grid : </p>
+
+<form action="<%= score_path %>" method="get">
+  <p><%= @grid %></p>
+  <label for=attempt>What's your best shot ?</label>
+  <p><input id="question" type="text" name="attempt" placeholder="find a word"></p>
+  <input type="hidden" value="<%= @start_time %>" name="start_time" >
+  <input name="grid" value="<%= @grid.join %>" type="hidden">
+  <input name="end_time" value="<% Time.now %>" type="hidden">
+  <button class="btn btn-primary" value="submit"> Let's Play</button>
+</form>
+
+
